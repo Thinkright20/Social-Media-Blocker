@@ -25,3 +25,6 @@ message.reply("**Please do not send bad words. It can result in a mute!**");
 if (message.author.bot) return;
     }
 })
+
+
+client.login('INSERT_TOKEN_HERE')
