@@ -19,15 +19,7 @@ for (i = 0; i < badWords.length; i++) {
 if (message.content.toLowerCase().includes(badWords[i])) {
 await message.delete();
 message.reply("**Please do not send bad words. It can result in a mute!**");
-  let UserJSON = JSON.parse(Fs.readFileSync("./DB/users.json"));
 
-
-
-
-
-
-            UserJSON[message.author.id].warns += 1;
-            Fs.writeFileSync("./DB/users.json", JSON.stringify(UserJSON));
 
         }
 if (message.author.bot) return;
