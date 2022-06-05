@@ -8,14 +8,6 @@ client.on("ready", () => {
     client.user.setActivity("Auto-Mod & Fun | >help")
 })
 
- 
-client.on("guildMemberAdd", async (member) => {
-  let UserJSON = JSON.parse(Fs.readFileSync("./DB/users.json"));
-UserJSON[member.id] = {
-                warns: 0
-            }
-            Fs.writeFileSync("./DB/users.json", JSON.stringify(UserJSON));
-})
 
 
 
