@@ -5,7 +5,7 @@ const Fs = require('fs')
 client.on("ready", () => {
 
     console.log("Bot Operational")
-    client.user.setActivity("Auto-Mod & Fun | >help")
+    client.user.setActivity("Auto-Modding")
 })
 
 
